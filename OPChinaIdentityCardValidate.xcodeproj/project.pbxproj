@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A288689182B776400B9C2C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A288688182B776400B9C2C0 /* Foundation.framework */; };
+		8A28868B182B776400B9C2C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A28868A182B776400B9C2C0 /* CoreGraphics.framework */; };
+		8A28868D182B776400B9C2C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A28868C182B776400B9C2C0 /* UIKit.framework */; };
+		8A288693182B776400B9C2C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A288691182B776400B9C2C0 /* InfoPlist.strings */; };
+		8A288695182B776400B9C2C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A288694182B776400B9C2C0 /* main.m */; };
+		8A288699182B776400B9C2C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A288698182B776400B9C2C0 /* AppDelegate.m */; };
+		8A28869C182B776400B9C2C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A28869A182B776400B9C2C0 /* Main.storyboard */; };
+		8A28869F182B776400B9C2C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A28869E182B776400B9C2C0 /* ViewController.m */; };
+		8A2886A1182B776400B9C2C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2886A0182B776400B9C2C0 /* Images.xcassets */; };
+		8A2886A8182B776400B9C2C0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2886A7182B776400B9C2C0 /* XCTest.framework */; };
+		8A2886A9182B776400B9C2C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A288688182B776400B9C2C0 /* Foundation.framework */; };
+		8A2886AA182B776400B9C2C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A28868C182B776400B9C2C0 /* UIKit.framework */; };
+		8A2886B2182B776400B9C2C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A2886B0182B776400B9C2C0 /* InfoPlist.strings */; };
+		8A2886B4182B776400B9C2C0 /* OPChinaIdentityCardValidateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2886B3182B776400B9C2C0 /* OPChinaIdentityCardValidateTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A2886AB182B776400B9C2C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A28867D182B776400B9C2C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A288684182B776400B9C2C0;
+			remoteInfo = OPChinaIdentityCardValidate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A288685182B776400B9C2C0 /* OPChinaIdentityCardValidate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OPChinaIdentityCardValidate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A288688182B776400B9C2C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8A28868A182B776400B9C2C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8A28868C182B776400B9C2C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A288690182B776400B9C2C0 /* OPChinaIdentityCardValidate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OPChinaIdentityCardValidate-Info.plist"; sourceTree = "<group>"; };
+		8A288692182B776400B9C2C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A288694182B776400B9C2C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A288696182B776400B9C2C0 /* OPChinaIdentityCardValidate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OPChinaIdentityCardValidate-Prefix.pch"; sourceTree = "<group>"; };
+		8A288697182B776400B9C2C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A288698182B776400B9C2C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A28869B182B776400B9C2C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A28869D182B776400B9C2C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8A28869E182B776400B9C2C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8A2886A0182B776400B9C2C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8A2886A6182B776400B9C2C0 /* OPChinaIdentityCardValidateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OPChinaIdentityCardValidateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2886A7182B776400B9C2C0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8A2886AF182B776400B9C2C0 /* OPChinaIdentityCardValidateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OPChinaIdentityCardValidateTests-Info.plist"; sourceTree = "<group>"; };
+		8A2886B1182B776400B9C2C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A2886B3182B776400B9C2C0 /* OPChinaIdentityCardValidateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPChinaIdentityCardValidateTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A288682182B776400B9C2C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A28868B182B776400B9C2C0 /* CoreGraphics.framework in Frameworks */,
+				8A28868D182B776400B9C2C0 /* UIKit.framework in Frameworks */,
+				8A288689182B776400B9C2C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2886A3182B776400B9C2C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2886A8182B776400B9C2C0 /* XCTest.framework in Frameworks */,
+				8A2886AA182B776400B9C2C0 /* UIKit.framework in Frameworks */,
+				8A2886A9182B776400B9C2C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A28867C182B776400B9C2C0 = {
+			isa = PBXGroup;
+			children = (
+				8A28868E182B776400B9C2C0 /* OPChinaIdentityCardValidate */,
+				8A2886AD182B776400B9C2C0 /* OPChinaIdentityCardValidateTests */,
+				8A288687182B776400B9C2C0 /* Frameworks */,
+				8A288686182B776400B9C2C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A288686182B776400B9C2C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A288685182B776400B9C2C0 /* OPChinaIdentityCardValidate.app */,
+				8A2886A6182B776400B9C2C0 /* OPChinaIdentityCardValidateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A288687182B776400B9C2C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A288688182B776400B9C2C0 /* Foundation.framework */,
+				8A28868A182B776400B9C2C0 /* CoreGraphics.framework */,
+				8A28868C182B776400B9C2C0 /* UIKit.framework */,
+				8A2886A7182B776400B9C2C0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A28868E182B776400B9C2C0 /* OPChinaIdentityCardValidate */ = {
+			isa = PBXGroup;
+			children = (
+				8A288697182B776400B9C2C0 /* AppDelegate.h */,
+				8A288698182B776400B9C2C0 /* AppDelegate.m */,
+				8A28869A182B776400B9C2C0 /* Main.storyboard */,
+				8A28869D182B776400B9C2C0 /* ViewController.h */,
+				8A28869E182B776400B9C2C0 /* ViewController.m */,
+				8A2886A0182B776400B9C2C0 /* Images.xcassets */,
+				8A28868F182B776400B9C2C0 /* Supporting Files */,
+			);
+			path = OPChinaIdentityCardValidate;
+			sourceTree = "<group>";
+		};
+		8A28868F182B776400B9C2C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A288690182B776400B9C2C0 /* OPChinaIdentityCardValidate-Info.plist */,
+				8A288691182B776400B9C2C0 /* InfoPlist.strings */,
+				8A288694182B776400B9C2C0 /* main.m */,
+				8A288696182B776400B9C2C0 /* OPChinaIdentityCardValidate-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A2886AD182B776400B9C2C0 /* OPChinaIdentityCardValidateTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A2886B3182B776400B9C2C0 /* OPChinaIdentityCardValidateTests.m */,
+				8A2886AE182B776400B9C2C0 /* Supporting Files */,
+			);
+			path = OPChinaIdentityCardValidateTests;
+			sourceTree = "<group>";
+		};
+		8A2886AE182B776400B9C2C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A2886AF182B776400B9C2C0 /* OPChinaIdentityCardValidateTests-Info.plist */,
+				8A2886B0182B776400B9C2C0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A288684182B776400B9C2C0 /* OPChinaIdentityCardValidate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2886B7182B776500B9C2C0 /* Build configuration list for PBXNativeTarget "OPChinaIdentityCardValidate" */;
+			buildPhases = (
+				8A288681182B776400B9C2C0 /* Sources */,
+				8A288682182B776400B9C2C0 /* Frameworks */,
+				8A288683182B776400B9C2C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OPChinaIdentityCardValidate;
+			productName = OPChinaIdentityCardValidate;
+			productReference = 8A288685182B776400B9C2C0 /* OPChinaIdentityCardValidate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A2886A5182B776400B9C2C0 /* OPChinaIdentityCardValidateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2886BA182B776500B9C2C0 /* Build configuration list for PBXNativeTarget "OPChinaIdentityCardValidateTests" */;
+			buildPhases = (
+				8A2886A2182B776400B9C2C0 /* Sources */,
+				8A2886A3182B776400B9C2C0 /* Frameworks */,
+				8A2886A4182B776400B9C2C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A2886AC182B776400B9C2C0 /* PBXTargetDependency */,
+			);
+			name = OPChinaIdentityCardValidateTests;
+			productName = OPChinaIdentityCardValidateTests;
+			productReference = 8A2886A6182B776400B9C2C0 /* OPChinaIdentityCardValidateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A28867D182B776400B9C2C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = opomelo;
+				TargetAttributes = {
+					8A2886A5182B776400B9C2C0 = {
+						TestTargetID = 8A288684182B776400B9C2C0;
+					};
+				};
+			};
+			buildConfigurationList = 8A288680182B776400B9C2C0 /* Build configuration list for PBXProject "OPChinaIdentityCardValidate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A28867C182B776400B9C2C0;
+			productRefGroup = 8A288686182B776400B9C2C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A288684182B776400B9C2C0 /* OPChinaIdentityCardValidate */,
+				8A2886A5182B776400B9C2C0 /* OPChinaIdentityCardValidateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A288683182B776400B9C2C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2886A1182B776400B9C2C0 /* Images.xcassets in Resources */,
+				8A288693182B776400B9C2C0 /* InfoPlist.strings in Resources */,
+				8A28869C182B776400B9C2C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2886A4182B776400B9C2C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2886B2182B776400B9C2C0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A288681182B776400B9C2C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A28869F182B776400B9C2C0 /* ViewController.m in Sources */,
+				8A288699182B776400B9C2C0 /* AppDelegate.m in Sources */,
+				8A288695182B776400B9C2C0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2886A2182B776400B9C2C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2886B4182B776400B9C2C0 /* OPChinaIdentityCardValidateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A2886AC182B776400B9C2C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A288684182B776400B9C2C0 /* OPChinaIdentityCardValidate */;
+			targetProxy = 8A2886AB182B776400B9C2C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A288691182B776400B9C2C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A288692182B776400B9C2C0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8A28869A182B776400B9C2C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A28869B182B776400B9C2C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A2886B0182B776400B9C2C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A2886B1182B776400B9C2C0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A2886B5182B776400B9C2C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A2886B6182B776500B9C2C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A2886B8182B776500B9C2C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Prefix.pch";
+				INFOPLIST_FILE = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8A2886B9182B776500B9C2C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Prefix.pch";
+				INFOPLIST_FILE = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8A2886BB182B776500B9C2C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OPChinaIdentityCardValidate.app/OPChinaIdentityCardValidate";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OPChinaIdentityCardValidateTests/OPChinaIdentityCardValidateTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8A2886BC182B776500B9C2C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OPChinaIdentityCardValidate.app/OPChinaIdentityCardValidate";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Prefix.pch";
+				INFOPLIST_FILE = "OPChinaIdentityCardValidateTests/OPChinaIdentityCardValidateTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A288680182B776400B9C2C0 /* Build configuration list for PBXProject "OPChinaIdentityCardValidate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2886B5182B776400B9C2C0 /* Debug */,
+				8A2886B6182B776500B9C2C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A2886B7182B776500B9C2C0 /* Build configuration list for PBXNativeTarget "OPChinaIdentityCardValidate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2886B8182B776500B9C2C0 /* Debug */,
+				8A2886B9182B776500B9C2C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8A2886BA182B776500B9C2C0 /* Build configuration list for PBXNativeTarget "OPChinaIdentityCardValidateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2886BB182B776500B9C2C0 /* Debug */,
+				8A2886BC182B776500B9C2C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A28867D182B776400B9C2C0 /* Project object */;
+}

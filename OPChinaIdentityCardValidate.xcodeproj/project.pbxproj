@@ -21,6 +21,14 @@
 		8A2886AA182B776400B9C2C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A28868C182B776400B9C2C0 /* UIKit.framework */; };
 		8A2886B2182B776400B9C2C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A2886B0182B776400B9C2C0 /* InfoPlist.strings */; };
 		8A2886B4182B776400B9C2C0 /* OPChinaIdentityCardValidateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2886B3182B776400B9C2C0 /* OPChinaIdentityCardValidateTests.m */; };
+		8A2886C1182B821800B9C2C0 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2886C0182B821800B9C2C0 /* JVFloatLabeledTextField.m */; };
+		8A2886DA182B880000B9C2C0 /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2886D1182B880000B9C2C0 /* BButton.m */; };
+		8A2886DB182B880000B9C2C0 /* NSString+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2886D3182B880000B9C2C0 /* NSString+BButton.m */; };
+		8A2886DC182B880000B9C2C0 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2886D5182B880000B9C2C0 /* NSString+FontAwesome.m */; };
+		8A2886DD182B880000B9C2C0 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A2886D7182B880000B9C2C0 /* FontAwesome.ttf */; };
+		8A2886DE182B880000B9C2C0 /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2886D9182B880000B9C2C0 /* UIColor+BButton.m */; };
+		8ABF5082182C7D04001A7C75 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8ABF507F182C7D04001A7C75 /* SVProgressHUD.bundle */; };
+		8ABF5083182C7D04001A7C75 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABF5081182C7D04001A7C75 /* SVProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,21 @@
 		8A2886AF182B776400B9C2C0 /* OPChinaIdentityCardValidateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OPChinaIdentityCardValidateTests-Info.plist"; sourceTree = "<group>"; };
 		8A2886B1182B776400B9C2C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A2886B3182B776400B9C2C0 /* OPChinaIdentityCardValidateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPChinaIdentityCardValidateTests.m; sourceTree = "<group>"; };
+		8A2886BF182B821800B9C2C0 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		8A2886C0182B821800B9C2C0 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		8A2886D0182B880000B9C2C0 /* BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BButton.h; sourceTree = "<group>"; };
+		8A2886D1182B880000B9C2C0 /* BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BButton.m; sourceTree = "<group>"; };
+		8A2886D2182B880000B9C2C0 /* NSString+BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BButton.h"; sourceTree = "<group>"; };
+		8A2886D3182B880000B9C2C0 /* NSString+BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BButton.m"; sourceTree = "<group>"; };
+		8A2886D4182B880000B9C2C0 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		8A2886D5182B880000B9C2C0 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		8A2886D7182B880000B9C2C0 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		8A2886D8182B880000B9C2C0 /* UIColor+BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BButton.h"; sourceTree = "<group>"; };
+		8A2886D9182B880000B9C2C0 /* UIColor+BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BButton.m"; sourceTree = "<group>"; };
+		8ABF507E182C7D04001A7C75 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		8ABF507F182C7D04001A7C75 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		8ABF5080182C7D04001A7C75 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		8ABF5081182C7D04001A7C75 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +135,7 @@
 		8A28868E182B776400B9C2C0 /* OPChinaIdentityCardValidate */ = {
 			isa = PBXGroup;
 			children = (
+				8A2886BD182B820B00B9C2C0 /* Dependent libraries */,
 				8A288697182B776400B9C2C0 /* AppDelegate.h */,
 				8A288698182B776400B9C2C0 /* AppDelegate.m */,
 				8A28869A182B776400B9C2C0 /* Main.storyboard */,
@@ -150,6 +174,60 @@
 				8A2886B0182B776400B9C2C0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A2886BD182B820B00B9C2C0 /* Dependent libraries */ = {
+			isa = PBXGroup;
+			children = (
+				8ABF507D182C7D04001A7C75 /* SVProgressHUD */,
+				8A2886CF182B880000B9C2C0 /* BButton */,
+				8A2886BE182B821800B9C2C0 /* JVFloatLabeledTextField */,
+			);
+			name = "Dependent libraries";
+			sourceTree = "<group>";
+		};
+		8A2886BE182B821800B9C2C0 /* JVFloatLabeledTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8A2886BF182B821800B9C2C0 /* JVFloatLabeledTextField.h */,
+				8A2886C0182B821800B9C2C0 /* JVFloatLabeledTextField.m */,
+			);
+			path = JVFloatLabeledTextField;
+			sourceTree = "<group>";
+		};
+		8A2886CF182B880000B9C2C0 /* BButton */ = {
+			isa = PBXGroup;
+			children = (
+				8A2886D0182B880000B9C2C0 /* BButton.h */,
+				8A2886D1182B880000B9C2C0 /* BButton.m */,
+				8A2886D2182B880000B9C2C0 /* NSString+BButton.h */,
+				8A2886D3182B880000B9C2C0 /* NSString+BButton.m */,
+				8A2886D4182B880000B9C2C0 /* NSString+FontAwesome.h */,
+				8A2886D5182B880000B9C2C0 /* NSString+FontAwesome.m */,
+				8A2886D6182B880000B9C2C0 /* resources */,
+				8A2886D8182B880000B9C2C0 /* UIColor+BButton.h */,
+				8A2886D9182B880000B9C2C0 /* UIColor+BButton.m */,
+			);
+			path = BButton;
+			sourceTree = "<group>";
+		};
+		8A2886D6182B880000B9C2C0 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A2886D7182B880000B9C2C0 /* FontAwesome.ttf */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		8ABF507D182C7D04001A7C75 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8ABF507E182C7D04001A7C75 /* SVProgressHUD-Prefix.pch */,
+				8ABF507F182C7D04001A7C75 /* SVProgressHUD.bundle */,
+				8ABF5080182C7D04001A7C75 /* SVProgressHUD.h */,
+				8ABF5081182C7D04001A7C75 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +306,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABF5082182C7D04001A7C75 /* SVProgressHUD.bundle in Resources */,
 				8A2886A1182B776400B9C2C0 /* Images.xcassets in Resources */,
 				8A288693182B776400B9C2C0 /* InfoPlist.strings in Resources */,
 				8A28869C182B776400B9C2C0 /* Main.storyboard in Resources */,
+				8A2886DD182B880000B9C2C0 /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +329,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2886DC182B880000B9C2C0 /* NSString+FontAwesome.m in Sources */,
+				8A2886DA182B880000B9C2C0 /* BButton.m in Sources */,
+				8A2886DE182B880000B9C2C0 /* UIColor+BButton.m in Sources */,
+				8A2886C1182B821800B9C2C0 /* JVFloatLabeledTextField.m in Sources */,
 				8A28869F182B776400B9C2C0 /* ViewController.m in Sources */,
+				8ABF5083182C7D04001A7C75 /* SVProgressHUD.m in Sources */,
 				8A288699182B776400B9C2C0 /* AppDelegate.m in Sources */,
+				8A2886DB182B880000B9C2C0 /* NSString+BButton.m in Sources */,
 				8A288695182B776400B9C2C0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +546,7 @@
 				8A2886B9182B776500B9C2C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A2886BA182B776500B9C2C0 /* Build configuration list for PBXNativeTarget "OPChinaIdentityCardValidateTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +555,7 @@
 				8A2886BC182B776500B9C2C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

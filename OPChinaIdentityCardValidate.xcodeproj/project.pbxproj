@@ -27,8 +27,11 @@
 		8A2886DC182B880000B9C2C0 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2886D5182B880000B9C2C0 /* NSString+FontAwesome.m */; };
 		8A2886DD182B880000B9C2C0 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A2886D7182B880000B9C2C0 /* FontAwesome.ttf */; };
 		8A2886DE182B880000B9C2C0 /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2886D9182B880000B9C2C0 /* UIColor+BButton.m */; };
-		8ABF5082182C7D04001A7C75 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8ABF507F182C7D04001A7C75 /* SVProgressHUD.bundle */; };
-		8ABF5083182C7D04001A7C75 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABF5081182C7D04001A7C75 /* SVProgressHUD.m */; };
+		8A60C38A18352F5F00E7D832 /* ZoneBitCode.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A60C38918352F5F00E7D832 /* ZoneBitCode.json */; };
+		8A7E0ABC1835B9B700E50930 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 8A7E0AB81835B9B700E50930 /* CHANGELOG.md */; };
+		8A7E0ABD1835B9B700E50930 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7E0ABA1835B9B700E50930 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A7E0ABE1835B9B700E50930 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8A7E0ABB1835B9B700E50930 /* README.md */; };
+		8A7E0AC21835BFDA00E50930 /* RNBlurModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7E0AC11835BFDA00E50930 /* RNBlurModalView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +75,13 @@
 		8A2886D7182B880000B9C2C0 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		8A2886D8182B880000B9C2C0 /* UIColor+BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BButton.h"; sourceTree = "<group>"; };
 		8A2886D9182B880000B9C2C0 /* UIColor+BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BButton.m"; sourceTree = "<group>"; };
-		8ABF507E182C7D04001A7C75 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
-		8ABF507F182C7D04001A7C75 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		8ABF5080182C7D04001A7C75 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		8ABF5081182C7D04001A7C75 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		8A60C38918352F5F00E7D832 /* ZoneBitCode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ZoneBitCode.json; sourceTree = "<group>"; };
+		8A7E0AB81835B9B700E50930 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		8A7E0AB91835B9B700E50930 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		8A7E0ABA1835B9B700E50930 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		8A7E0ABB1835B9B700E50930 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		8A7E0AC01835BFDA00E50930 /* RNBlurModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBlurModalView.h; sourceTree = "<group>"; };
+		8A7E0AC11835BFDA00E50930 /* RNBlurModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBlurModalView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,7 @@
 		8A28868F182B776400B9C2C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A60C38918352F5F00E7D832 /* ZoneBitCode.json */,
 				8A288690182B776400B9C2C0 /* OPChinaIdentityCardValidate-Info.plist */,
 				8A288691182B776400B9C2C0 /* InfoPlist.strings */,
 				8A288694182B776400B9C2C0 /* main.m */,
@@ -179,7 +186,8 @@
 		8A2886BD182B820B00B9C2C0 /* Dependent libraries */ = {
 			isa = PBXGroup;
 			children = (
-				8ABF507D182C7D04001A7C75 /* SVProgressHUD */,
+				8A7E0ABF1835BFC600E50930 /* RNBlurModalView */,
+				8A7E0AB71835B9B700E50930 /* JSONKit */,
 				8A2886CF182B880000B9C2C0 /* BButton */,
 				8A2886BE182B821800B9C2C0 /* JVFloatLabeledTextField */,
 			);
@@ -219,15 +227,24 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
-		8ABF507D182C7D04001A7C75 /* SVProgressHUD */ = {
+		8A7E0AB71835B9B700E50930 /* JSONKit */ = {
 			isa = PBXGroup;
 			children = (
-				8ABF507E182C7D04001A7C75 /* SVProgressHUD-Prefix.pch */,
-				8ABF507F182C7D04001A7C75 /* SVProgressHUD.bundle */,
-				8ABF5080182C7D04001A7C75 /* SVProgressHUD.h */,
-				8ABF5081182C7D04001A7C75 /* SVProgressHUD.m */,
+				8A7E0AB81835B9B700E50930 /* CHANGELOG.md */,
+				8A7E0AB91835B9B700E50930 /* JSONKit.h */,
+				8A7E0ABA1835B9B700E50930 /* JSONKit.m */,
+				8A7E0ABB1835B9B700E50930 /* README.md */,
 			);
-			path = SVProgressHUD;
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		8A7E0ABF1835BFC600E50930 /* RNBlurModalView */ = {
+			isa = PBXGroup;
+			children = (
+				8A7E0AC01835BFDA00E50930 /* RNBlurModalView.h */,
+				8A7E0AC11835BFDA00E50930 /* RNBlurModalView.m */,
+			);
+			name = RNBlurModalView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,10 +323,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ABF5082182C7D04001A7C75 /* SVProgressHUD.bundle in Resources */,
+				8A60C38A18352F5F00E7D832 /* ZoneBitCode.json in Resources */,
 				8A2886A1182B776400B9C2C0 /* Images.xcassets in Resources */,
 				8A288693182B776400B9C2C0 /* InfoPlist.strings in Resources */,
 				8A28869C182B776400B9C2C0 /* Main.storyboard in Resources */,
+				8A7E0ABC1835B9B700E50930 /* CHANGELOG.md in Resources */,
+				8A7E0ABE1835B9B700E50930 /* README.md in Resources */,
 				8A2886DD182B880000B9C2C0 /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,9 +352,10 @@
 				8A2886DA182B880000B9C2C0 /* BButton.m in Sources */,
 				8A2886DE182B880000B9C2C0 /* UIColor+BButton.m in Sources */,
 				8A2886C1182B821800B9C2C0 /* JVFloatLabeledTextField.m in Sources */,
+				8A7E0ABD1835B9B700E50930 /* JSONKit.m in Sources */,
 				8A28869F182B776400B9C2C0 /* ViewController.m in Sources */,
-				8ABF5083182C7D04001A7C75 /* SVProgressHUD.m in Sources */,
 				8A288699182B776400B9C2C0 /* AppDelegate.m in Sources */,
+				8A7E0AC21835BFDA00E50930 /* RNBlurModalView.m in Sources */,
 				8A2886DB182B880000B9C2C0 /* NSString+BButton.m in Sources */,
 				8A288695182B776400B9C2C0 /* main.m in Sources */,
 			);

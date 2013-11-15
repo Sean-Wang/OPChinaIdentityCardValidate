@@ -31,6 +31,10 @@ const static CGFloat IdentityCardFieldFloatingLabelFontSize = 11.0f;
         factor = [NSArray arrayWithObjects:@"7", @"9", @"10", @"5", @"8", @"4", @"2", @"1", @"6", @"3", @"7", @"9", @"10", @"5", @"8", @"4", @"2", nil];
         remainder = [NSArray arrayWithObjects:@"1", @"0", @"X", @"9", @"8", @"7", @"6", @"5", @"4", @"3", @"2", nil];
         province = [NSArray arrayWithObjects:@"11", @"12", @"13", @"14", @"15", @"21", @"22", @"23", @"31", @"32", @"33", @"34", @"35", @"36", @"37", @"41", @"42", @"43", @"44", @"45", @"46", @"50", @"51", @"52", @"53", @"54", @"61", @"62", @"63", @"64", @"65", @"71", @"81", @"82", @"91", nil];
+        
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ZoneBitCode" ofType:@"json"];
+        NSData *JSONData = [NSData dataWithContentsOfFile:filePath options:NSDataReadingMappedIfSafe error:nil];
+        zoneBitCode = [JSONData objectFromJSONData];
     }
     
     return self;
@@ -71,6 +75,8 @@ const static CGFloat IdentityCardFieldFloatingLabelFontSize = 11.0f;
 }
 
 - (void)validateIdentityCard {
+    [titleField resignFirstResponder];
+    
     if (titleField.text.length == kIdentityCardType_1 || titleField.text.length == kIdentityCardType_2) {
         switch (titleField.text.length) {
             case kIdentityCardType_1: {
@@ -80,11 +86,29 @@ const static CGFloat IdentityCardFieldFloatingLabelFontSize = 11.0f;
                 
                 NSString *code = [titleField.text substringWithRange:NSMakeRange(0, 2)];
                 
+                NSInteger gender = [[titleField.text substringWithRange:NSMakeRange(14, 1)] integerValue];
+                NSString *genderStr;
+                if (fmod(gender, 2))
+                    genderStr = NSLocalizedString(@"男", <#comment#>);
+                else
+                    genderStr = NSLocalizedString(@"女", <#comment#>);
+                
+                NSString *zoneCode = [titleField.text substringWithRange:NSMakeRange(0, 6)];
+                
+                NSInteger birthOrder = [[titleField.text substringWithRange:NSMakeRange(12, 3)] integerValue];
+                if (fmod(birthOrder, 2)) {
+                    birthOrder = birthOrder/2 + 1;
+                }
+                else
+                    birthOrder = birthOrder/2;
+                
                 if ([province containsObject:code] && [self checkDateOfBirth:year month:month day:day]) {
-                    [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"身份证号码正确", <#comment#>)];
+                    RNBlurModalView *modal = [[RNBlurModalView alloc] initWithViewController:self title:NSLocalizedString(@"身份证号码正确", <#comment#>) message:[NSString stringWithFormat:@"你一定于%i年%i月%i日出生在%@%@%@，是当年该地区第%i个出身的%@性。", year, month, day, [zoneBitCode objectForKey:[code stringByAppendingString:@"0000"]], [zoneBitCode objectForKey:[[titleField.text substringWithRange:NSMakeRange(0, 4)] stringByAppendingString:@"00"]], [zoneBitCode objectForKey:zoneCode], birthOrder, genderStr]];
+                    [modal show];
                 }
                 else {
-                    [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"身份证号码无效", <#comment#>)];
+                    RNBlurModalView *modal = [[RNBlurModalView alloc] initWithViewController:self title:NSLocalizedString(@"身份证号码无效", <#comment#>) message:@"手抖了吧？身份证号码输错了吧？重新输入一次。"];
+                    [modal show];
                 }
             }
                 break;
@@ -96,16 +120,34 @@ const static CGFloat IdentityCardFieldFloatingLabelFontSize = 11.0f;
                 
                 NSString *code = [titleField.text substringWithRange:NSMakeRange(0, 2)];
                 
+                NSInteger gender = [[titleField.text substringWithRange:NSMakeRange(16, 1)] integerValue];
+                NSString *genderStr;
+                if (fmod(gender, 2))
+                    genderStr = NSLocalizedString(@"男", <#comment#>);
+                else
+                    genderStr = NSLocalizedString(@"女", <#comment#>);
+                
+                NSString *zoneCode = [titleField.text substringWithRange:NSMakeRange(0, 6)];
+                
+                NSInteger birthOrder = [[titleField.text substringWithRange:NSMakeRange(14, 3)] integerValue];
+                if (fmod(birthOrder, 2)) {
+                    birthOrder = birthOrder/2 + 1;
+                }
+                else
+                    birthOrder = birthOrder/2;
+                
                 NSMutableArray *pendingArray = [[NSMutableArray alloc] init];
                 for (int i = 0; i < factor.count; i++) {
                     [pendingArray addObject:[titleField.text substringWithRange:NSMakeRange(i, 1)]];
                 }
                 
                 if ([province containsObject:code] && [self checkDateOfBirth:year month:month day:day] && [self checkEndCode:pendingArray lastCheckCode:[titleField.text substringWithRange:NSMakeRange(17, 1)]]) {
-                    [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"身份证号码正确", <#comment#>)];
+                    RNBlurModalView *modal = [[RNBlurModalView alloc] initWithViewController:self title:NSLocalizedString(@"身份证号码正确", <#comment#>) message:[NSString stringWithFormat:@"你一定于%i年%i月%i日出生在%@%@%@，是当年该地区第%i个出身的%@性。", year, month, day, [zoneBitCode objectForKey:[code stringByAppendingString:@"0000"]], [zoneBitCode objectForKey:[[titleField.text substringWithRange:NSMakeRange(0, 4)] stringByAppendingString:@"00"]], [zoneBitCode objectForKey:zoneCode], birthOrder, genderStr]];
+                    [modal show];
                 }
                 else {
-                    [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"身份证号码无效", <#comment#>)];
+                    RNBlurModalView *modal = [[RNBlurModalView alloc] initWithViewController:self title:NSLocalizedString(@"身份证号码无效", <#comment#>) message:@"手抖了吧？身份证号码输错了吧？重新输入一次。"];
+                    [modal show];
                 }
             }
                 break;
@@ -114,8 +156,10 @@ const static CGFloat IdentityCardFieldFloatingLabelFontSize = 11.0f;
                 break;
         }
     }
-    else
-        [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"输入身份证格式有误", <#comment#>)];
+    else {
+        RNBlurModalView *modal = [[RNBlurModalView alloc] initWithViewController:self title:NSLocalizedString(@"输入身份证格式有误", <#comment#>) message:@"身份证号码只可能是15位或18位哦～"];
+        [modal show];
+    }
 }
 
 - (BOOL)checkDateOfBirth:(NSInteger)year month:(NSInteger)month day:(NSInteger)day {

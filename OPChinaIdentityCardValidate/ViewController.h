@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "JVFloatLabeledTextField.h"
 #import "BButton.h"
-#import "SVProgressHUD.h"
+#import "JSONKit.h"
+#import "RNBlurModalView.h"
 
 @class JVFloatLabeledTextField;
 
@@ -17,6 +18,7 @@
     NSArray *factor;
     NSArray *remainder;
     NSArray *province;
+    NSDictionary *zoneBitCode;
     
     JVFloatLabeledTextField *titleField;
 }

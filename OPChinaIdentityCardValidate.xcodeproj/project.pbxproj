@@ -108,6 +108,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A0B28FC1839F98E00B80578 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		8A28867C182B776400B9C2C0 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +148,7 @@
 		8A28868E182B776400B9C2C0 /* OPChinaIdentityCardValidate */ = {
 			isa = PBXGroup;
 			children = (
+				8A0B28FC1839F98E00B80578 /* iPad */,
 				8A2886BD182B820B00B9C2C0 /* Dependent libraries */,
 				8A288697182B776400B9C2C0 /* AppDelegate.h */,
 				8A288698182B776400B9C2C0 /* AppDelegate.m */,
@@ -487,7 +495,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Prefix.pch";
 				INFOPLIST_FILE = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -500,7 +510,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Prefix.pch";
 				INFOPLIST_FILE = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

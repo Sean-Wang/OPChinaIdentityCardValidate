@@ -103,7 +103,7 @@ const static CGFloat IdentityCardFieldFloatingLabelFontSize = 11.0f;
                     birthOrder = birthOrder/2;
                 
                 if ([province containsObject:code] && [self checkDateOfBirth:year month:month day:day]) {
-                    RNBlurModalView *modal = [[RNBlurModalView alloc] initWithViewController:self title:NSLocalizedString(@"身份证号码正确", <#comment#>) message:[NSString stringWithFormat:@"你一定于%i年%i月%i日出生在%@%@%@，是当年该地区第%i个出身的%@性。", year, month, day, [zoneBitCode objectForKey:[code stringByAppendingString:@"0000"]], [zoneBitCode objectForKey:[[titleField.text substringWithRange:NSMakeRange(0, 4)] stringByAppendingString:@"00"]], [zoneBitCode objectForKey:zoneCode], birthOrder, genderStr]];
+                    RNBlurModalView *modal = [[RNBlurModalView alloc] initWithViewController:self title:NSLocalizedString(@"身份证号码正确", <#comment#>) message:[NSString stringWithFormat:@"出生年月日：%i年%i月%i日\n%@%@%@，是当年该地区第%i个出身的%@性。", year, month, day, [zoneBitCode objectForKey:[code stringByAppendingString:@"0000"]], [zoneBitCode objectForKey:[[titleField.text substringWithRange:NSMakeRange(0, 4)] stringByAppendingString:@"00"]], [zoneBitCode objectForKey:zoneCode], birthOrder, genderStr]];
                     [modal show];
                 }
                 else {
@@ -142,7 +142,7 @@ const static CGFloat IdentityCardFieldFloatingLabelFontSize = 11.0f;
                 }
                 
                 if ([province containsObject:code] && [self checkDateOfBirth:year month:month day:day] && [self checkEndCode:pendingArray lastCheckCode:[titleField.text substringWithRange:NSMakeRange(17, 1)]]) {
-                    RNBlurModalView *modal = [[RNBlurModalView alloc] initWithViewController:self title:NSLocalizedString(@"身份证号码正确", <#comment#>) message:[NSString stringWithFormat:@"你一定于%i年%i月%i日出生在%@%@%@，是当年该地区第%i个出身的%@性。", year, month, day, [zoneBitCode objectForKey:[code stringByAppendingString:@"0000"]], [zoneBitCode objectForKey:[[titleField.text substringWithRange:NSMakeRange(0, 4)] stringByAppendingString:@"00"]], [zoneBitCode objectForKey:zoneCode], birthOrder, genderStr]];
+                    RNBlurModalView *modal = [[RNBlurModalView alloc] initWithViewController:self title:NSLocalizedString(@"身份证号码正确", <#comment#>) message:[NSString stringWithFormat:@"出生年月日：%i年%i月%i日\n省/直辖市：%@\n市/县：%@\n地区：%@\n出生序号：当年该地区第%i个出身的%@性。", year, month, day, [zoneBitCode objectForKey:[code stringByAppendingString:@"0000"]], [zoneBitCode objectForKey:[[titleField.text substringWithRange:NSMakeRange(0, 4)] stringByAppendingString:@"00"]], [zoneBitCode objectForKey:zoneCode], birthOrder, genderStr]];
                     [modal show];
                 }
                 else {

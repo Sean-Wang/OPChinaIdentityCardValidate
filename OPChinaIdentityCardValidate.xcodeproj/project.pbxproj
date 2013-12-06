@@ -32,6 +32,9 @@
 		8A7E0ABD1835B9B700E50930 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7E0ABA1835B9B700E50930 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A7E0ABE1835B9B700E50930 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8A7E0ABB1835B9B700E50930 /* README.md */; };
 		8A7E0AC21835BFDA00E50930 /* RNBlurModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7E0AC11835BFDA00E50930 /* RNBlurModalView.m */; };
+		8AFC055B1843326A00A0B4A6 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AFC05581843326A00A0B4A6 /* libMobClickLibrary.a */; };
+		8AFC055C1843326A00A0B4A6 /* libMobClickLibrary_armv6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AFC05591843326A00A0B4A6 /* libMobClickLibrary_armv6.a */; };
+		8AFC055E184332DE00A0B4A6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AFC055D184332DE00A0B4A6 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,10 @@
 		8A7E0ABB1835B9B700E50930 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8A7E0AC01835BFDA00E50930 /* RNBlurModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBlurModalView.h; sourceTree = "<group>"; };
 		8A7E0AC11835BFDA00E50930 /* RNBlurModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBlurModalView.m; sourceTree = "<group>"; };
+		8AFC05581843326A00A0B4A6 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		8AFC05591843326A00A0B4A6 /* libMobClickLibrary_armv6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary_armv6.a; sourceTree = "<group>"; };
+		8AFC055A1843326A00A0B4A6 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		8AFC055D184332DE00A0B4A6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +96,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFC055E184332DE00A0B4A6 /* libz.dylib in Frameworks */,
 				8A28868B182B776400B9C2C0 /* CoreGraphics.framework in Frameworks */,
 				8A28868D182B776400B9C2C0 /* UIKit.framework in Frameworks */,
 				8A288689182B776400B9C2C0 /* Foundation.framework in Frameworks */,
+				8AFC055B1843326A00A0B4A6 /* libMobClickLibrary.a in Frameworks */,
+				8AFC055C1843326A00A0B4A6 /* libMobClickLibrary_armv6.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,13 +118,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A0B28FC1839F98E00B80578 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = iPad;
-			sourceTree = "<group>";
-		};
 		8A28867C182B776400B9C2C0 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +140,7 @@
 		8A288687182B776400B9C2C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AFC055D184332DE00A0B4A6 /* libz.dylib */,
 				8A288688182B776400B9C2C0 /* Foundation.framework */,
 				8A28868A182B776400B9C2C0 /* CoreGraphics.framework */,
 				8A28868C182B776400B9C2C0 /* UIKit.framework */,
@@ -148,7 +152,6 @@
 		8A28868E182B776400B9C2C0 /* OPChinaIdentityCardValidate */ = {
 			isa = PBXGroup;
 			children = (
-				8A0B28FC1839F98E00B80578 /* iPad */,
 				8A2886BD182B820B00B9C2C0 /* Dependent libraries */,
 				8A288697182B776400B9C2C0 /* AppDelegate.h */,
 				8A288698182B776400B9C2C0 /* AppDelegate.m */,
@@ -194,6 +197,7 @@
 		8A2886BD182B820B00B9C2C0 /* Dependent libraries */ = {
 			isa = PBXGroup;
 			children = (
+				8AFC05571843326A00A0B4A6 /* UMAnalytics_Sdk_2.2.1.OpenUDID */,
 				8A7E0ABF1835BFC600E50930 /* RNBlurModalView */,
 				8A7E0AB71835B9B700E50930 /* JSONKit */,
 				8A2886CF182B880000B9C2C0 /* BButton */,
@@ -253,6 +257,16 @@
 				8A7E0AC11835BFDA00E50930 /* RNBlurModalView.m */,
 			);
 			name = RNBlurModalView;
+			sourceTree = "<group>";
+		};
+		8AFC05571843326A00A0B4A6 /* UMAnalytics_Sdk_2.2.1.OpenUDID */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC05581843326A00A0B4A6 /* libMobClickLibrary.a */,
+				8AFC05591843326A00A0B4A6 /* libMobClickLibrary_armv6.a */,
+				8AFC055A1843326A00A0B4A6 /* MobClick.h */,
+			);
+			path = UMAnalytics_Sdk_2.2.1.OpenUDID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,10 +506,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Bin Zhang (92268B9G64)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Prefix.pch";
 				INFOPLIST_FILE = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/venus/github/OPChinaIdentityCardValidate/OPChinaIdentityCardValidate/UMAnalytics_Sdk_2.2.1.OpenUDID,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -507,10 +526,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Bin Zhang (92268B9G64)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Prefix.pch";
 				INFOPLIST_FILE = "OPChinaIdentityCardValidate/OPChinaIdentityCardValidate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/venus/github/OPChinaIdentityCardValidate/OPChinaIdentityCardValidate/UMAnalytics_Sdk_2.2.1.OpenUDID,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;

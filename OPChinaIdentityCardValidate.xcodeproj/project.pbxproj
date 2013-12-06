@@ -516,7 +516,7 @@
 					/Users/venus/github/OPChinaIdentityCardValidate/OPChinaIdentityCardValidate/UMAnalytics_Sdk_2.2.1.OpenUDID,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -536,7 +536,7 @@
 					/Users/venus/github/OPChinaIdentityCardValidate/OPChinaIdentityCardValidate/UMAnalytics_Sdk_2.2.1.OpenUDID,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
